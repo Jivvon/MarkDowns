@@ -59,3 +59,13 @@ DELETE FROM [테이블] WHERE [조건]
 
 > SELECT 문에서 INTO가 들어갈 경우 조건에 맞는 기존 테이블의 내용을 가져와 새 테이블로 만든다.
 
+```mysql
+SELECT COUNT(*) FROM [테이블] WHERE salary > 100000 # salary가 10만 이상인 어트리뷰트의 수
+... WHERE NAME LIKE 'K%' # NAME이 K로 시작하는 어트리뷰트 검색
+UPDATE employee SET salary = salary*2 WHERE title = 'sawon' # title이 사원인 사람의 연봉을 2배로 증가
+```
+
+```mysql
+SET SQL_SAFE_UPDATES = 0; # safe mode 풀기
+SET SQL_SAFE_UPDATES = 1; # safe mode 설정
+```
